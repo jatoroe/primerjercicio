@@ -21,14 +21,17 @@ public class PrimerEjercicio {
         lec = new java.util.Scanner(System.in);
         System.out.print("Ingrese tamaño del arreglo");
         int tam = lec.nextInt();
+        ///Crear arreglos.
         int[] vectorA = new int[tam];
         int[] vectorB = new int[tam];
+        /// Leer datos.
         for (int i = 0; i < tam; i++){
             System.out.println ("dato"+i+ "A");
             vectorA[i] = lec.nextInt ();
             System.out.println ("dato"+i+"B");
             vectorB[i] = lec.nextInt();
         }
+        /// Imprimir resultados.
         int[] resultado =  sumaVectores (vectorA, vectorB);
         for (int i = 0; i < tam; i++){
             System.out.println (resultado[i]);
